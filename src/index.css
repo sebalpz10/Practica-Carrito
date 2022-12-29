@@ -1,13 +1,126 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.big_logo {
+  height: 150px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+.none {
+  display: none;
+}
+
+.header {
+  background-color: #717575;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  padding-bottom: 5px;
+}
+
+.header_logo {
+  height: 65px;
+  padding-left: 8px;
+}
+
+.header_ul {
+  list-style-type: none;
+
+  display: flex;
+}
+
+.header_li {
+  margin-top: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.header_link {
+  text-decoration: none;
+
+  font-size: 20px;
+
+  color: #000000;
+
+  padding-right: 6px;
+  padding-left: 6px;
+
+  transition: all .5s ease;
+}
+
+.header_link:hover {
+  border-bottom: solid #b3b3b3 5px;
+
+  color: #b3b3b3;
+}
+
+.shop_cart {
+  font-size: 30px;
+
+  margin: 22px;
+}
+
+/* ------------------------------------ */
+
+.main {
+  height: 168px;
+}
+
+/* ------------------------------------ */
+
+
+.footer {
+  background-color: #717575;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.footer_ul {
+  list-style-type: none;
+
+  display: flex;
+}
+
+.footer_li {
+  margin: 10px;
+}
+
+.footer_icono {
+  height: 25px;
+}
+
+
+/* --------------------------------- */
+
+.card_product {
+  border: thin solid #b3b3b3;
+
+  padding: 16px;
+}
+
+.card {
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 0 16px #00000025 inset;
+}
+
+.grid_responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card_product_cart {
+  border-bottom: thin solid #b3b3b3;
 }
